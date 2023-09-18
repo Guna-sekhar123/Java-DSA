@@ -1,0 +1,18 @@
+package dsa;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// testing the linkedlist(singly)
+		linkedlist list = new linkedlist();
+		list.insertFirst(5);
+		list.insertFirst(4);
+		list.insertFirst(3);
+		list.insertLast(9);
+		list.insertFirst(2);
+		list.insertFirst(1);
+		list.insert(10, 3);
+		list.printlist();
+	}
+
+}

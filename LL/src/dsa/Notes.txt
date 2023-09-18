@@ -1,0 +1,16 @@
+Big-O :- The time complexity of the program at worst case scenario
+pass by value :- changes the original value which was stored in the heap memory
+memory in programing was like heap and stack memory
+The reference variables are stored in stack memory and the values/ objects are stored in heap memory
+variables, arrays, maps, lists, queues, stacks, priority queues, linked lists,tress, graphs
+searching algos:- binary search
+sorting algos:- merge, selection, insertion, cyclic sort, bubble sort
+
+Bit manupulation:-
+    Left shift:   a << b == a * 2^b (a and b are int)
+                  a << 1 == 2*a ( a will be doubled)
+    Right shift:  a >> b == a / 2^b(a and b are int)
+                  a >> 1 == halve ( the starting bit will be ignored)
+    XOR       :  a ^ 1 = ~a
+                 a ^ a = 0
+                 a ^ 0 = a

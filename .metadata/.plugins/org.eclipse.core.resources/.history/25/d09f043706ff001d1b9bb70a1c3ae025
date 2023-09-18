@@ -1,0 +1,12 @@
+package dsa;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// testing the linkedlist(singly)
+		linkedlist list = new linkedlist();
+		// testing the linked list(doubly)
+		
+	}
+
+}

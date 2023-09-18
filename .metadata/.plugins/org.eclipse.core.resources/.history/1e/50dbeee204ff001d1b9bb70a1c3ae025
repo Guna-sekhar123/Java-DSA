@@ -1,0 +1,74 @@
+package dsa;
+
+
+public class linkedlist {
+	private Node head; // created a head node variable
+	private Node tail; // created a tail node variable
+	
+	private int size; // created a variable to tract the size of linkedlist.
+	
+	// Inserting an element into front of the linked list
+	public void insertFirst(int val) { 
+		Node node = new Node(val);
+		node.next = head;
+		head = node;
+		
+		if(tail == null) {
+			tail = head;
+		}
+		size++;
+	}
+	// Inserting an element into the end of the linkedlist
+	public void insertLast(int val) {
+		if(tail == null) {
+			insertFirst(val);
+			return;
+		}
+		Node node = new Node(val);
+		node.next = tail;
+		tail = node;
+		size++;
+	}
+	//inserting an element into the linked list
+	public void insert(int val, int index) {
+		if(index == 0) {
+			insertFirst(val);
+		}
+		if(index == size) {
+			insertLast(val);
+		}
+		Node temp = head;
+		for(int i =1; i<index; i++) {
+			temp = temp.next;
+		}
+		Node node = new Node(val,temp.next);
+		temp.next = node;
+		size++;
+	}
+	//displaying the elements in the linkedlist.
+	public void printlist() {
+		Node temp = head;
+		while(temp!= null) {
+			System.out.print(temp.value + ",");
+			temp = temp.next;
+		}
+	}
+	
+	// created a constructor that initialises the size to 0
+	public linkedlist() {
+		this.size = 0;
+	}
+	
+	// Created the structure of a node 
+	private class Node{
+		private int value;
+		private Node next;
+		public Node(int value) {
+			this.value = value;
+		}
+		public Node(int value, Node next) {
+			this.value = value;
+			this.next = next;
+		}
+	}
+}
